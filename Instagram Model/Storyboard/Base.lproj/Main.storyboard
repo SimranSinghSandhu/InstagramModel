@@ -427,7 +427,41 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Lj3-9F-Xih"/>
                     </view>
-                    <navigationItem key="navigationItem" id="qDR-Ej-AeS"/>
+                    <navigationItem key="navigationItem" largeTitleDisplayMode="never" id="qDR-Ej-AeS">
+                        <nil key="title"/>
+                        <view key="titleView" contentMode="scaleToFill" id="VSn-D9-p4M">
+                            <rect key="frame" x="107" y="0.0" width="200" height="44"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BATMAN.SANDHU" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fcl-cU-mA2">
+                                    <rect key="frame" x="0.0" y="0.0" width="200" height="20"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="200" id="Ova-jP-J7j"/>
+                                        <constraint firstAttribute="height" constant="20" id="XmQ-In-s2O"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="14"/>
+                                    <color key="textColor" systemColor="systemGrayColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Posts" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DhR-7V-jRa">
+                                    <rect key="frame" x="0.0" y="20" width="200" height="16"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="200" id="qKa-lE-gMs"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <constraints>
+                                <constraint firstAttribute="bottom" secondItem="DhR-7V-jRa" secondAttribute="bottom" constant="8" id="gwK-vR-p2P"/>
+                                <constraint firstItem="fcl-cU-mA2" firstAttribute="centerX" secondItem="VSn-D9-p4M" secondAttribute="centerX" id="mHr-M3-Iqx"/>
+                                <constraint firstItem="fcl-cU-mA2" firstAttribute="top" secondItem="VSn-D9-p4M" secondAttribute="top" id="ujl-YJ-2My"/>
+                                <constraint firstItem="DhR-7V-jRa" firstAttribute="centerX" secondItem="VSn-D9-p4M" secondAttribute="centerX" id="xAG-ta-lHz"/>
+                                <constraint firstItem="DhR-7V-jRa" firstAttribute="top" secondItem="fcl-cU-mA2" secondAttribute="bottom" id="zZv-41-Woj"/>
+                            </constraints>
+                        </view>
+                    </navigationItem>
                     <connections>
                         <outlet property="tableView" destination="w9o-C9-n0O" id="LB7-Qy-B0q"/>
                     </connections>
